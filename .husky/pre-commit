@@ -11,7 +11,7 @@ fi
 
 
 #rodar os testes
-php artisan test --parallel
+php artisan test --without-tty --parallel
 if [ $? -ne 0 ]; then
     echo "Corrija os erros dos testes antes de commitar.";
     exit 1;
